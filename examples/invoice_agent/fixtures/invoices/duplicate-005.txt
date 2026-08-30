@@ -1,0 +1,15 @@
+NORTHWIND LOGISTICS
+Plot 22, Logistics Park, Bhiwandi 421302
+
+INVOICE
+
+Invoice No:   NW-2291
+Invoice Date: 2026-07-02
+PO Number:    PO-88121
+
+Description                 Qty   Unit Price     Amount
+Courier services, June        1     4,300.00   4,300.00
+
+                                 Subtotal:     4,300.00
+                                 Tax (18%):      774.00
+                                 TOTAL:        5,074.00

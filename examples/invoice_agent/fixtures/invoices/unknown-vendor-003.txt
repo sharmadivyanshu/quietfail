@@ -1,0 +1,14 @@
+BlueRidge Software Pvt Ltd
+Tower B, Cyber Hub, Gurgaon 122002
+
+INVOICE
+
+Invoice No:   BRS-1181
+Invoice Date: 2026-07-28
+
+Description                 Qty   Unit Price     Amount
+Subscription, Q3              1     4,300.00   4,300.00
+
+                                 Subtotal:     4,300.00
+                                 Tax (18%):      774.00
+                                 TOTAL:        5,074.00

@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: qf
+          POSTGRES_PASSWORD: qf
+          POSTGRES_DB: quietfail_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd pg_isready --health-interval 10s
+          --health-timeout 5s --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install Poetry
+        run: pipx install poetry
+
+      - name: Install dependencies
+        run: poetry install --with dev,llm,postgres
+
+      - name: Lint
+        run: poetry run ruff check .
+
+      - name: Format check
+        run: poetry run ruff format --check .
+
+      - name: Type check
+        run: poetry run mypy src/quietfail --ignore-missing-imports
+
+      - name: Tests
+        env:
+          QUIETFAIL_TEST_DSN: postgresql://qf:qf@localhost:5432/quietfail_test
+        run: poetry run pytest -q
+
+      - name: Failure-injection harness
+        # The real acceptance test: 5/5 injected silent failures caught,
+        # 0 false positives on the healthy control.
+        run: poetry run python -m invoice_agent.inject

@@ -1,0 +1,18 @@
+ACME OFFICE SUPPLIES INC
+1420 Warehouse Road, Fremont CA 94538
+
+INVOICE
+
+Invoice No:   ACM-4471
+Invoice Date: 2026-07-14
+PO Number:    PO-88120
+
+Description                      Qty    Unit Price      Amount
+A4 paper, 20 reams                20         25.00      500.00
+Toner cartridges HP 26A            5        150.00      750.00
+
+                                       Subtotal:      1,250.00
+                                       Tax (18%):       225.00
+                                       TOTAL:         1,475.00
+
+Terms: NET30

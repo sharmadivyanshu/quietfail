@@ -1,0 +1,13 @@
+{
+  "vendor_name": "Northwind Logistics LLC",
+  "vendor_id": "V-1002",
+  "invoice_number": "NW-2299",
+  "invoice_date": "2026-07-30",
+  "po_number": "PO-88121",
+  "subtotal": 4300.00,
+  "tax": 774.00,
+  "total": 5999.00,
+  "line_items": [
+    {"description": "Freight charges, July", "quantity": 1, "unit_price": 4300.0, "amount": 4300.0, "gl_code": "6310"}
+  ]
+}

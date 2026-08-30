@@ -1,0 +1,14 @@
+{
+  "vendor_name": "Blue Ridge Software",
+  "vendor_id": "V-1003",
+  "invoice_number": "BRS-1180",
+  "invoice_date": "2026-07-22",
+  "po_number": null,
+  "subtotal": 9600.00,
+  "tax": 1728.00,
+  "total": 11328.00,
+  "line_items": [
+    {"description": "Annual platform license renewal", "quantity": 1, "unit_price": 7200.0, "amount": 7200.0, "gl_code": null},
+    {"description": "Implementation consulting, 8 hrs", "quantity": 8, "unit_price": 300.0, "amount": 2400.0, "gl_code": null}
+  ]
+}

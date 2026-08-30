@@ -1,0 +1,16 @@
+BLUE RIDGE SOFTWARE
+Tower B, Cyber Hub, Gurgaon 122002
+
+INVOICE
+
+Invoice No:   BRS-1180
+Invoice Date: 2026-07-22
+PO Number:    -
+
+Description                              Qty   Unit Price      Amount
+Annual platform license renewal            1     7,200.00    7,200.00
+Implementation consulting, 8 hrs           8       300.00    2,400.00
+
+                                              Subtotal:      9,600.00
+                                              Tax (18%):     1,728.00
+                                              TOTAL:        11,328.00

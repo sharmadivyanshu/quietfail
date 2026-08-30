@@ -1,0 +1,14 @@
+{
+  "vendor_name": "Acme Office Supplies Inc",
+  "vendor_id": "V-1001",
+  "invoice_number": "ACM-4471",
+  "invoice_date": "2026-07-14",
+  "po_number": "PO-88120",
+  "subtotal": 1250.00,
+  "tax": 225.00,
+  "total": 1475.00,
+  "line_items": [
+    {"description": "A4 paper, 20 reams", "quantity": 20, "unit_price": 25.0, "amount": 500.0, "gl_code": "6120"},
+    {"description": "Toner cartridges HP 26A", "quantity": 5, "unit_price": 150.0, "amount": 750.0, "gl_code": "6120"}
+  ]
+}

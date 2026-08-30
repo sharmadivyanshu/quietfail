@@ -1,0 +1,13 @@
+{
+  "vendor_name": "BlueRidge Software Pvt Ltd",
+  "vendor_id": null,
+  "invoice_number": "BRS-1181",
+  "invoice_date": "2026-07-28",
+  "po_number": null,
+  "subtotal": 4300.00,
+  "tax": 774.00,
+  "total": 5074.00,
+  "line_items": [
+    {"description": "Subscription, Q3", "quantity": 1, "unit_price": 4300.0, "amount": 4300.0, "gl_code": null}
+  ]
+}

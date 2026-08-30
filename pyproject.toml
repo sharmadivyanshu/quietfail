@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "quietfail"
+version = "0.1.0"
+description = "Catch LLM agents that fail silently — no ground truth required."
+keywords = ["langgraph", "langchain", "llm", "agents", "observability", "drift-detection", "llmops"]
+authors = ["Divyanshu Sharma <sharmadivyanshu24@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [
+    { include = "quietfail", from = "src" },
+    { include = "invoice_agent", from = "examples" },
+]
+
+[tool.poetry.scripts]
+quietfail = "quietfail.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langgraph = "^1.2"
+langgraph-checkpoint-sqlite = "^2.0"
+pydantic = "^2.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
+ruff = "^0.8"
+mypy = "^1.13"
+
+[tool.poetry.group.llm]
+optional = true
+
+[tool.poetry.group.llm.dependencies]
+langchain = "^1.0"
+langchain-openai = "^0.3"
+
+[tool.poetry.group.postgres]
+optional = true
+
+[tool.poetry.group.postgres.dependencies]
+psycopg = { version = "^3.2", extras = ["binary"] }
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

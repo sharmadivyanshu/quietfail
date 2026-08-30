@@ -2,6 +2,8 @@
 
 **Catch LLM agents that fail silently — no ground truth required.**
 
+![CI](https://github.com/sharmadivyanshu/quietfail/actions/workflows/ci.yml/badge.svg)
+
 Agent observability for [LangGraph](https://github.com/langchain-ai/langgraph) and LangChain. Detects silent failures, behavioural drift, and runaway cost in production AI agents by learning what *normal* looks like and alerting when a run falls outside it.
 
 > Your agent didn't crash. It turned an error into fluent, plausible prose, returned 200 OK, and your dashboard stayed green.

@@ -6,6 +6,7 @@ keywords = ["langgraph", "langchain", "llm", "agents", "observability", "drift-d
 authors = ["Divyanshu Sharma <sharmadivyanshu24@gmail.com>"]
 readme = "README.md"
 license = "MIT"
+repository = "https://github.com/sharmadivyanshu/quietfail"
 packages = [
     { include = "quietfail", from = "src" },
     { include = "invoice_agent", from = "examples" },
